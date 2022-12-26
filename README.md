@@ -1,7 +1,7 @@
 # responsive_app
 
-A new Flutter project.
-
+this is responsive app code by flutter 
+run : 'flutter pub get' after clone project ^^
 ## Getting Started
 
 This project is a starting point for a Flutter application.
