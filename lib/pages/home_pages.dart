@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:responsive_app/pages/choose_topic_page.dart';
 import 'package:responsive_app/utils/theme.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -25,7 +26,9 @@ class MyHomePage extends StatelessWidget {
                   Align(
                     alignment: const Alignment(0.0, 0.95),
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pushNamed('$ChooseTopicPage');
+                      },
                       style: ButtonStyle(
                         backgroundColor:
                             MaterialStateProperty.all(kColorPrimaryGray),

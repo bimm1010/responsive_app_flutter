@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:responsive_app/pages/choose_topic_page.dart';
 import 'pages/home_pages.dart';
 import 'package:responsive_app/utils/theme.dart';
 
@@ -24,7 +25,13 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(primaryColor: kColorPrimary),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'responsive app'),
+      initialRoute: '$MyHomePage',
+      routes: {
+        '$MyHomePage': (_) => const MyHomePage(
+              title: 'title',
+            ),
+        '$ChooseTopicPage': (_) => const ChooseTopicPage(),
+      },
     );
   }
 }
